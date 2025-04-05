@@ -3,8 +3,8 @@ import pickle
 import pandas as pd
 
 
-MODEL_PATH = 'C:\\Users\\Dell\\Desktop\\Data Science Projects\\Data Science In Python\\My Churn ML Model\\Churn_model.pkl'
-COLUMNS_PATH = 'C:\\Users\\Dell\\Desktop\\Data Science Projects\\Data Science In Python\\My Churn ML Model\\trained_columns.pkl'
+MODEL_PATH = 'Churn_model.pkl'
+COLUMNS_PATH = 'trained_columns.pkl'
 
 model = pickle.load(open(MODEL_PATH, 'rb'))
 model_columns = pickle.load(open(COLUMNS_PATH, 'rb'))
