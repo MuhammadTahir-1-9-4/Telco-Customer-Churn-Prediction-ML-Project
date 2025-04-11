@@ -1,75 +1,72 @@
-# Telco Customer Churn Prediction 🚀
+# Telco Customer Churn Prediction ML Project 🚀
 
-Welcome to the Telco Customer Churn Prediction project!  
-In this project, I analyzed Telco customer data to identify factors contributing to customer churn and built a predictive model to help the business reduce churn and retain customers.
+This project focuses on predicting customer churn for a telecom company using machine learning techniques. The goal is to help the company proactively retain customers who are likely to leave, based on their historical data.
 
-## 📌 Project Overview
+### 📊 Dataset
+The dataset contains customer details such as:
+- Demographics
+- Account information
+- Service subscriptions
+- Contract details
+- Payment methods
+- Tenure and usage patterns
 
-- **Author:** Muhammad Tahir  
-- **Date:** 30 March 2025
-- **Goal:** Predict customer churn using machine learning models and provide actionable insights.
+### 📂 Project Structure
+- **Telco Customer Churn Analysis (EDA).ipynb**  
+  Comprehensive exploratory data analysis to understand trends, correlations, and important features.
+  
+- **Model Building.ipynb**  
+  Model training, evaluation, and selection. Achieved a high accuracy using supervised learning models.
 
-## 📊 Dataset
+### 🔍 Exploratory Data Analysis (EDA)
+- Distribution of churned vs. retained customers
+- Impact of services like Online Security, Tech Support, and Contract Type on churn
+- Analysis of tenure, monthly charges, and total charges
+- Correlation heatmaps and visual insights
 
-The dataset contains customer information like demographics, account details, and services subscribed.  
-Target variable: **Churn** (Yes/No)
+### 🧠 Model Building, Evaluation & Explainability
+- Data preprocessing and feature engineering
+- Train-test split and balancing techniques
+- Model training and evaluation using:
+  - Accuracy
+  - Precision, Recall, F1-Score
+  - Confusion Matrix
+  - Classification Report
+- **Model Explainability with SHAP:**
+  - SHAP Summary Plot (Global Feature Importance)
+  - SHAP Beeswarm Plot for Class 1 (Churn)
+  - SHAP Bar Plot for Class 1 (Churn)
+  - Visual interpretation of feature impacts on model predictions
+  - 
+### 📈 Model Performance
+**Classification Report:**
+               precision    recall  f1-score   support
 
-**Key features include:**
-- Customer demographics (gender, senior citizen status, dependents)
-- Account information (tenure, contract type, payment method)
-- Services availed (internet service, online security, tech support)
-- Charges (monthly charges, total charges)
+           0       0.97      0.94      0.95       553
+           1       0.95      0.97      0.96       611
 
-## 🧩 Project Workflow
+    accuracy                           0.96      1164
+   macro avg       0.96      0.96      0.96      1164
+weighted avg       0.96      0.96      0.96      1164
 
-### 1. Exploratory Data Analysis (EDA)
-- Explored distributions of key variables.
-- Visualized relationships between features and churn.
-- Identified high-risk segments:
-  - Month-to-month contracts.
-  - Electronic check payments.
-  - Short-tenure customers.
-  - Higher monthly charges increase churn probability.
+✅ **Accuracy:** 95.6%
 
-### 2. Data Preprocessing
-- Cleaned the dataset (removed unnecessary columns).
-- Encoded categorical variables using **LabelEncoder**.
-- Addressed class imbalance using **SMOTEENN** (combination of over- and under-sampling).
+### 🚀 Deployment
+The model is deployed using **Streamlit** for interactive customer churn prediction.  
+➡️ **Demo:** [Screen recording of the deployed app] *(attach your recording here)*
 
-### 3. Model Building
-- Selected **Random Forest Classifier** for its robustness and interpretability.
-- Performed hyperparameter tuning using **GridSearchCV** to improve performance.
+### 📌 Conclusion
+- Achieved excellent performance with ~96% accuracy.
+- Identified key factors contributing to customer churn.
+- Deployed a user-friendly web app for real-time predictions.
 
-### 4. Model Evaluation
-- Evaluated model performance using:
-  - **Accuracy Score**
-  - **Confusion Matrix**
-  - **Classification Report (Precision, Recall, F1-score)**
-- Final model achieved solid results in classifying churn vs. non-churn.
+### 🧩 Future Improvements
+- Incorporate real-time data streams
+- Implement automated re-training
 
-### 5. Model Saving
-- Serialized the final model using **pickle** for future predictions.
+### 🤝 Let's Connect!
+If you find this project interesting, feel free to connect with me:
+- 🔗 [LinkedIn](https://www.linkedin.com/in/muhammad-tahir-data/)
+- 🌟 Star the repo if you liked it!
 
-## 🛠️ Tools & Technologies
-- Python 🐍
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- Scikit-learn
-- imbalanced-learn (SMOTEENN)
-- Pickle
 
-## 📂 Repository Structure
-
-```
-├── Telco Customer Churn Analysis (EDA).ipynb  # EDA and insights
-├── Model Building.ipynb                       # Model training and evaluation
-├── Telco-customer-churn(cleaned).csv          # Cleaned dataset
-└── README.md                                  # Project documentation
-```
-
-## 🚀 Future Work
-- Test with more advanced models (XGBoost, LightGBM).
-- Integrate SHAP for explainability.
-
-## 🤝 Let's Connect!
-If you liked this project or have suggestions, feel free to connect!
