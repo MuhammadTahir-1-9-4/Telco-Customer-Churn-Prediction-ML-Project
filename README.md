@@ -37,7 +37,7 @@ The dataset contains customer details such as:
   - SHAP Beeswarm Plot for Class 1 (Churn)
   - SHAP Bar Plot for Class 1 (Churn)
   - Visual interpretation of feature impacts on model predictions
-  - 
+  
 ### 📈 Model Performance
 **Classification Report:**
                precision    recall  f1-score   support
@@ -46,14 +46,14 @@ The dataset contains customer details such as:
            1       0.95      0.97      0.96       611
 
     accuracy                           0.96      1164
-   macro avg       0.96      0.96      0.96      1164
-weighted avg       0.96      0.96      0.96      1164
+    macro avg       0.96      0.96      0.96      1164
+    weighted avg       0.96      0.96      0.96      1164
 
 ✅ **Accuracy:** 95.6%
 
 ### 🚀 Deployment
 The model is deployed using **Streamlit** for interactive customer churn prediction.  
-➡️ **Demo:** [Screen recording of the deployed app] *(attach your recording here)*
+👉 [Streamlit Live App](https://telco-customer-churn-prediction-ml-project.streamlit.app/)
 
 ### 📌 Conclusion
 - Achieved excellent performance with ~96% accuracy.
