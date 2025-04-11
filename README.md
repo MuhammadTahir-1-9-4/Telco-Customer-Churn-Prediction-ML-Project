@@ -40,14 +40,15 @@ The dataset contains customer details such as:
   
 ### 📈 Model Performance
 **Classification Report:**
+
                precision    recall  f1-score   support
 
            0       0.97      0.94      0.95       553
            1       0.95      0.97      0.96       611
 
-    accuracy                           0.96      1164
+    accuracy                            0.96      1164
     macro avg       0.96      0.96      0.96      1164
-    weighted avg       0.96      0.96      0.96      1164
+    weighted avg    0.96      0.96      0.96      1164
 
 ✅ **Accuracy:** 95.6%
 
