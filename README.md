@@ -1,4 +1,4 @@
-# Telco Customer Churn Prediction ML Project 🚀
+# Telco Customer Churn Prediction Project 🚀
 
 This project focuses on predicting customer churn for a telecom company using machine learning techniques. The goal is to help the company proactively retain customers who are likely to leave, based on their historical data.
 
